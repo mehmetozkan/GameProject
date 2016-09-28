@@ -9,7 +9,6 @@ import javax.swing.*;
 public class OyunPaneli extends JPanel implements Runnable, KeyListener{
 	/**
 	 * 20090109 Mehmet ÖZKAN 
-	 * 20090198 Mustafa ALTINGÖZ
 	 */
 	private static final long serialVersionUID = 1L;
 	JFrame frmcl=new JFrame();
@@ -123,7 +122,7 @@ public class OyunPaneli extends JPanel implements Runnable, KeyListener{
 
 		g.setColor(Color.LIGHT_GRAY); 
 		g.drawString("Mehmet ÖZKAN",2,42);
-		//g.drawString("20090198-Mustafa ALTINGÖZ",2,56);
+		g.drawString("GameProject",2,56);
 
 		if(gameover)
 		{
@@ -335,7 +334,7 @@ public class OyunPaneli extends JPanel implements Runnable, KeyListener{
 				
 
 				p.move();
-				for (mermi m : mermiler) { //foreachli yapmazsan düzelebilir
+				for (mermi m : mermiler) { //change foreach 
 					m.move();
 				}
 				Collision();
